@@ -1,0 +1,84 @@
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rubberBand {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.text-animate {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 1s forwards;
+    animation-delay: 1s;
+    min-width: 10px;
+    font-size: var(--font-size-h1);
+    font-family: var(--font-title);
+    font-weight: 600;
+    color: var(--color-terracota);
+    margin-bottom: 0.2em;
+}
+
+.text-animate-hover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+    font-size: var(--font-size-h1);
+    font-family: var(--font-title);
+    font-weight: 600;
+    color: var(--color-terracota);
+    margin-bottom: 0.2em;
+}
+
+.text-animate-hover:hover {
+    animation: rubberBand 1s;
+    color: var(--color-gold);
+}
+
+@media screen and (max-width: 768px) {
+    .text-animate {
+        font-size: 62px;
+    }
+    .text-animate-hover {
+        font-size: 62px;
+    }
+}
+
+.span_animate {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
