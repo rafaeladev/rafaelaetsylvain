@@ -59,7 +59,7 @@ export default function Home() {
                         Gallerie photobooth (Code : 7TMP)
                     </a>
                     <a
-                        href=''
+                        href='https://www.youtube.com/watch?v=17w9vCy8NDw'
                         target='_blank'
                         className='accueil_link'
                     >
